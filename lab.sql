@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `AUTHOR`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `AUTHOR` (
-  `Author_Id` int(11) NOT NULL,
-  `Name` varchar(25) DEFAULT NULL,
-  `Email` varchar(25) DEFAULT NULL,
-  `Phone_No` int(11) DEFAULT NULL,
-  `Status` varchar(25) DEFAULT NULL,
+  `Author_Id` int(100) NOT NULL,
+  `Name` varchar(100) DEFAULT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `Phone_No` CHAR(100)  DEFAULT NULL,
+  `Status` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`Author_Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -239,3 +239,4 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-12-07  5:44:32
+
